@@ -57,8 +57,6 @@ def remove_chastisements(name):
 
 
 def create_commendation(name, title):
-    '''Создает похвалу'''
-
     if not (child := find_schoolkid(name)):
         return
     if not (subject := find_subject(title, child)):
