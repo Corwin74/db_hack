@@ -17,6 +17,7 @@ def find_schoolkid(name):
         print(f'Найден ученик: {child}')
         return child
 
+    
 def find_subject(title, schoolkid):
     try:
         subject = Subject.objects.get(title__contains=title, year_of_study=schoolkid.year_of_study)
